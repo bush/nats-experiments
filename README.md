@@ -3,15 +3,8 @@ A docker environment to run a nats server and some clients
 
 ## Compliance Checklist
 
-- [ ] Mercury
-- [x] Venus
-- [x] Earth (Orbit/Moon)
-- [x] Mars
-- [ ] Jupiter
-- [ ] Saturn
-- [ ] Uranus
-- [ ] Neptune
-- [ ] Comet Haley
+- [x] <= 250 ms latency
+- [x] Pub/Sub
 
 ## NATS Performance
 
