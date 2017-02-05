@@ -1,4 +1,5 @@
-# nats-experiments
+# NATS Evaluation
+
 A docker environment to run a nats server and some clients
 
 ## Compliance Checklist
