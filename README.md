@@ -8,5 +8,9 @@ A docker environment to run a nats server and some clients
 
 ## NATS Performance
 
-This article give some insigts to NATS performance with a comparison to REDIS.
+This article give some insigts to NATS performance with a comparison to REDIS:
+
+[Benchmarking Message Queue Latency](http://bravenewgeek.com/benchmarking-message-queue-latency)
+
+
 ![alt tag](assets/Redis_latency.png)
