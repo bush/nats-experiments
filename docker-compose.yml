@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  nats1:
+    image: nats:0.9.6
+  go1:
+    image: golang:1.7.5-wheezy
+    stdin_open: true
+    tty: true
+    volumes:
+      - ${GOPATH}:/go
+  go2:
+    image: golang:1.7.5-wheezy
+    stdin_open: true
+    tty: true
+    volumes:
+      - ${GOPATH}:/go
