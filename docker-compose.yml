@@ -4,14 +4,38 @@ services:
   nats1:
     image: nats:0.9.6
   go1:
-    image: golang:1.7.5-wheezy
+    image: golang:1.7.5
+    command: bash
     stdin_open: true
     tty: true
     volumes:
-      - ${GOPATH}:/go
+      - ${WORKSPACE1}:/go
   go2:
-    image: golang:1.7.5-wheezy
+    image: golang:1.7.5
+    command: bash
     stdin_open: true
     tty: true
     volumes:
-      - ${GOPATH}:/go
+      - ${WORKSPACE1}:/go
+  go3:
+    image: golang:1.7.5
+    command: bash
+    stdin_open: true
+    tty: true
+    volumes:
+      - ${WORKSPACE1}:/go
+  node1:
+    image: node:6.9.5
+    command: bash
+    stdin_open: true
+    tty: true
+    volumes:
+      - ${WORKSPACE2}:/home/node
+  ruby1:
+    image: ruby:2.4.0
+    command: bash
+    stdin_open: true
+    tty: true
+    volumes:
+      - ${WORKSPACE3}:/home
+    
